@@ -784,10 +784,18 @@
           <div class="reveal md:col-span-2">
             <!-- Exemplo simples com mailto. Troque por Formspree/Back-end se quiser. -->
             <form
-              onsubmit="location.href='mailto:contato@lucas-couto.com?subject=' + encodeURIComponent(this.assunto.value) + '&body=' + encodeURIComponent(this.mensagem.value); return false;"
+              method="POST"
+              action="https://formspree.io/f/mqadglwe"
               class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
             >
-              <label class="block text-sm">Assunto</label>
+              <label class="block text-sm">Seu email:</label>
+              <input
+                name="email"
+                required
+                class="mt-1 w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2"
+                placeholder="joao@mail.com"
+              />
+              <label class="block text-sm mt-4">Assunto</label>
               <input
                 name="assunto"
                 required
