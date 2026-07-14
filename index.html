@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Lucas Couto | Machine Learning Engineer · Computer Vision Researcher
+      Lucas Couto — Machine Learning Engineer &amp; Computer Vision Researcher
     </title>
     <meta
       name="description"
-      content="Lucas Couto builds computer vision systems that run in production (instance segmentation, deepfake detection, visual recommendation research) and publishes at ICEIS."
+      content="Machine Learning Engineer and Computer Vision researcher. I ship deep learning systems to production and research visual recommendation in my Master's."
     />
     <link rel="canonical" href="https://lucas-couto.com/" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <!-- google-site-verification: colar meta tag aqui se a verificação por DNS falhar -->
+
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="2d0fa7cc-a63d-4b22-aa0f-bc671c7c55b7"
+    ></script>
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lucas-couto.com/" />
+    <meta property="og:site_name" content="Lucas Couto" />
     <meta
       property="og:title"
-      content="Lucas Couto | Machine Learning Engineer · Computer Vision Researcher"
+      content="Lucas Couto — Machine Learning Engineer &amp; Computer Vision Researcher"
     />
     <meta
       property="og:description"
@@ -25,12 +33,18 @@
     />
     <meta
       property="og:image"
-      content="https://lucas-couto.com/assets/lucas-couto.jpg"
+      content="https://lucas-couto.com/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Lucas Couto — Machine Learning Engineer, in a computer-vision annotation style"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Lucas Couto | Machine Learning Engineer · Computer Vision Researcher"
+      content="Lucas Couto — Machine Learning Engineer &amp; Computer Vision Researcher"
     />
     <meta
       name="twitter:description"
@@ -38,17 +52,75 @@
     />
     <meta
       name="twitter:image"
-      content="https://lucas-couto.com/assets/lucas-couto.jpg"
+      content="https://lucas-couto.com/assets/og-image.png"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="assets/fonts/space-grotesk-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lucas Silva Couto",
+        "jobTitle": "Machine Learning Engineer",
+        "url": "https://lucas-couto.com",
+        "email": "mailto:contato@lucas-couto.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/lucasscouto",
+          "https://github.com/lucas-couto"
+        ],
+        "knowsAbout": [
+          "Computer Vision",
+          "Deep Learning",
+          "Machine Learning",
+          "Vision Transformers",
+          "Convolutional Neural Networks",
+          "MLOps"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Estadual de Maringá"
+        },
+        "worksFor": { "@type": "Organization", "name": "Kasco AI" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "An Empirical Comparison of CNN and ViT Features for Visually-Aware Fashion Recommendation",
+        "datePublished": "2026",
+        "author": [
+          { "@type": "Person", "name": "Lucas Silva Couto" },
+          { "@type": "Person", "name": "Rodrigo Calvo" },
+          { "@type": "Person", "name": "Rodrigo Clemente Thom de Souza" },
+          { "@type": "Person", "name": "Marcos Aurélio Domingues" }
+        ],
+        "url": "https://doi.org/10.5220/0014910900004018"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Recommending Points of Interest with a Context-Aware Dual Recurrent Neural Network",
+        "datePublished": "2025",
+        "author": [
+          { "@type": "Person", "name": "Lucas Silva Couto" },
+          { "@type": "Person", "name": "Gislaine Leal" },
+          { "@type": "Person", "name": "Marcos Aurélio Domingues" }
+        ],
+        "url": "https://doi.org/10.5220/0013230000003929"
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
@@ -71,9 +143,9 @@
         </ul>
         <div class="nav-actions">
           <div class="lang-toggle" role="group" aria-label="Language">
-            <button type="button" data-lang="en" aria-pressed="true">EN</button
+            <button type="button" data-lang="en" aria-pressed="true" data-track="lang_toggle" data-track-to="en">EN</button
             ><span aria-hidden="true">|</span
-            ><button type="button" data-lang="pt" aria-pressed="false">
+            ><button type="button" data-lang="pt" aria-pressed="false" data-track="lang_toggle" data-track-to="pt">
               PT
             </button>
           </div>
@@ -82,6 +154,8 @@
             href="assets/cv-en.pdf"
             download="Lucas_Couto_CV_EN.pdf"
             data-i18n="nav.cv"
+            data-track="cv_download"
+            data-track-lang="en"
             >Download CV</a
           >
         </div>
@@ -106,12 +180,14 @@
           href="assets/cv-en.pdf"
           download="Lucas_Couto_CV_EN.pdf"
           data-i18n="nav.cv"
+          data-track="cv_download"
+          data-track-lang="en"
           >Download CV</a
         >
         <div class="lang-toggle" role="group" aria-label="Language">
-          <button type="button" data-lang="en" aria-pressed="true">EN</button
+          <button type="button" data-lang="en" aria-pressed="true" data-track="lang_toggle" data-track-to="en">EN</button
           ><span aria-hidden="true">|</span
-          ><button type="button" data-lang="pt" aria-pressed="false">PT</button>
+          ><button type="button" data-lang="pt" aria-pressed="false" data-track="lang_toggle" data-track-to="pt">PT</button>
         </div>
       </div>
     </header>
@@ -135,7 +211,12 @@
               architectures behind them.
             </p>
             <div class="hero-ctas">
-              <a class="btn btn-primary" href="#projects" data-i18n="hero.cta"
+              <a
+                class="btn btn-primary"
+                href="#projects"
+                data-i18n="hero.cta"
+                data-track="cta_click"
+                data-track-label="view_work"
                 >View work</a
               >
               <a
@@ -143,6 +224,9 @@
                 href="https://www.linkedin.com/in/lucasscouto"
                 target="_blank"
                 rel="noopener"
+                data-track="outbound_click"
+                data-track-destination="linkedin"
+                data-track-section="hero"
                 >LinkedIn</a
               >
               <a
@@ -150,9 +234,17 @@
                 href="https://github.com/lucas-couto"
                 target="_blank"
                 rel="noopener"
+                data-track="outbound_click"
+                data-track-destination="github"
+                data-track-section="hero"
                 >GitHub</a
               >
-              <a class="btn btn-ghost" href="mailto:contato@lucas-couto.com"
+              <a
+                class="btn btn-ghost"
+                href="mailto:contato@lucas-couto.com"
+                data-track="contact_click"
+                data-track-method="email"
+                data-track-section="hero"
                 >E-mail</a
               >
             </div>
@@ -657,6 +749,8 @@
                 href="https://www.scitepress.org/PublicationsDetail.aspx?ID=dZ4kcnlZo4Q=&amp;t=1"
                 target="_blank"
                 rel="noopener"
+                data-track="publication_click"
+                data-track-paper="iceis2026"
                 >An Empirical Comparison of CNN and ViT Features for
                 Visually-Aware Fashion Recommendation</a
               >
@@ -682,6 +776,8 @@
                 href="https://www.scitepress.org/Link.aspx?doi=10.5220/0013230000003929"
                 target="_blank"
                 rel="noopener"
+                data-track="publication_click"
+                data-track-paper="iceis2025"
                 >Recommending Points of Interest with a Context-Aware Dual
                 Recurrent Neural Network</a
               >
@@ -716,7 +812,12 @@
         <p class="contact-lead reveal" data-i18n="contact.lead">
           Open to consulting, engineering roles and research collaboration.
         </p>
-        <a class="contact-email reveal" href="mailto:contato@lucas-couto.com"
+        <a
+          class="contact-email reveal"
+          href="mailto:contato@lucas-couto.com"
+          data-track="contact_click"
+          data-track-method="email"
+          data-track-section="contact"
           >contato@lucas-couto.com</a
         >
         <div class="contact-links reveal">
@@ -725,6 +826,9 @@
             href="https://www.linkedin.com/in/lucasscouto"
             target="_blank"
             rel="noopener"
+            data-track="outbound_click"
+            data-track-destination="linkedin"
+            data-track-section="contact"
             >LinkedIn</a
           >
           <a
@@ -732,6 +836,9 @@
             href="https://github.com/lucas-couto"
             target="_blank"
             rel="noopener"
+            data-track="outbound_click"
+            data-track-destination="github"
+            data-track-section="contact"
             >GitHub</a
           >
           <a
@@ -739,6 +846,8 @@
             href="assets/cv-en.pdf"
             download="Lucas_Couto_CV_EN.pdf"
             data-i18n="nav.cv"
+            data-track="cv_download"
+            data-track-lang="en"
             >Download CV</a
           >
         </div>
@@ -751,12 +860,13 @@
     <footer class="site-footer">
       <p class="mono">// last_updated: 2026-07</p>
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang="en" aria-pressed="true">EN</button
+        <button type="button" data-lang="en" aria-pressed="true" data-track="lang_toggle" data-track-to="en">EN</button
         ><span aria-hidden="true">|</span
-        ><button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        ><button type="button" data-lang="pt" aria-pressed="false" data-track="lang_toggle" data-track-to="pt">PT</button>
       </div>
     </footer>
 
+    <script type="module" src="js/analytics.js"></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>

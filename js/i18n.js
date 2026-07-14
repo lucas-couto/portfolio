@@ -185,6 +185,7 @@
         "download",
         isPt ? "Lucas_Couto_CV_PT.pdf" : "Lucas_Couto_CV_EN.pdf",
       );
+      link.setAttribute("data-track-lang", isPt ? "pt" : "en");
     });
 
     try {
