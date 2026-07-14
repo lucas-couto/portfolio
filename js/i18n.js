@@ -176,6 +176,17 @@
       );
     });
 
+    document.querySelectorAll(".cv-download-link").forEach(function (link) {
+      link.setAttribute(
+        "href",
+        isPt ? "assets/cv-pt.pdf" : "assets/cv-en.pdf",
+      );
+      link.setAttribute(
+        "download",
+        isPt ? "Lucas_Couto_CV_PT.pdf" : "Lucas_Couto_CV_EN.pdf",
+      );
+    });
+
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (err) {
